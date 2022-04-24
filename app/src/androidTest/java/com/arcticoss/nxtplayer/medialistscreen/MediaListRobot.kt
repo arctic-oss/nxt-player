@@ -33,4 +33,9 @@ class MediaListVerification(
         val noVideoFiles = rule.activity.getString(R.string.noVideoFilesFound)
         rule.onNodeWithText(noVideoFiles).assertIsDisplayed()
     }
+
+    fun permissionNotGrantedIsShown() {
+        val permissionNotGranted = rule.activity.getString(R.string.permissionNotGranted)
+        rule.onNodeWithText(permissionNotGranted).assertIsDisplayed()
+    }
 }

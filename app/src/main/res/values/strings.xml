@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Nxt Player</string>
     <string name="noVideoFilesFound">No Video Files Found</string>
+    <string name="permissionNotGranted">Permission Not Granted</string>
 </resources>

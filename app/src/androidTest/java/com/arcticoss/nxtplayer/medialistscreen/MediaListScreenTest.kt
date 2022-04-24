@@ -19,4 +19,13 @@ class MediaListScreenTest {
         }
     }
 
+    @Test
+    fun displayPermissionNotGranted() {
+        launchMediaListScreen(videoListRule) {
+            // no operation
+        } verify {
+            permissionNotGrantedIsShown()
+        }
+    }
+
 }
